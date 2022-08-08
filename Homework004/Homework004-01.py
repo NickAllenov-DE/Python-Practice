@@ -3,11 +3,6 @@
 # Пример:
 # - при d = 0.001, π = 3.141.    10^(-10)≤ d ≤10^-1
 
-# a, b, c = 2, 3, 4
-# x = a*b*c
-#
-# Pi = 3 + (4 / x) - (4 / x)
-#
 d = int(input('Choose the degree of rounding (amount digits after comma): '))
 def rounding_pi(d):
     res = 3

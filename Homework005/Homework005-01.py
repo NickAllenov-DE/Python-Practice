@@ -7,7 +7,7 @@ fragment1 = 'абв'
 fragment2 = 'пере'
 
 def fragment_eraser(line, fragment):
-    print(line)
+    # print(line)
     words = line.split()
     new_words = []
     for word in words:
@@ -15,4 +15,4 @@ def fragment_eraser(line, fragment):
             new_words.append(word)
     new_line = ' '.join(new_words)
     return new_line
-print(fragment_eraser(line2, fragment2))
+print(f"{line2} --> {fragment_eraser(line2, fragment2)}")

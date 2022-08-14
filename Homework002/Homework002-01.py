@@ -30,7 +30,7 @@ def sum_of_dig2(n):
     ''' param n: вещественное число; return: сумма цифр в числе '''
 
     listofdig = []
-    for i in usernum:
+    for i in n:
         if i.isdigit():
             listofdig.append(int(i))
     print(listofdig)

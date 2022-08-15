@@ -48,4 +48,29 @@ print(DistPoints(Ax, Ay, Bx, By))
 
 # 4 задача
 
+lst = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
+def sec_entry(lst: list, elem: str):
+    return [i for i, elt in enumerate(lst) if elem in elt][1] if len([i for i, elt in enumerate(lst)]) >= 2 else 'Второго вхождения нет'
+print(sec_entry(lst, 'qwe'))
 
+
+# 5 задача
+
+import random
+from math import ceil
+def pair_mult():
+    N = int(input('Ведите количество элементов списка: '))
+    min = int(input('Ведите минимальное число в списке чисел: '))
+    max = int(input('Ведите максимальное число в списке чисел: '))
+    num_list = [random.randint(min, max) for i in range(N)]
+    print(num_list)
+    return [num_list[i] * num_list[-i-1] for i in range(ceil(len(num_list) / 2))]
+print(pair_mult())
+
+
+# 6 задача
+
+def list_of_seq():
+    N = int(input('Введите количество элементов: '))
+    return [(-3) ** i for i in range(1, N+1)]
+print(list_of_seq())

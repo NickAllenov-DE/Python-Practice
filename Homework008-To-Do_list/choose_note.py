@@ -1,9 +1,7 @@
 import json
 
-
-
 def find_by_key(lst, key, value):
-    return (dict_ for index, dict_ in enumerate(lst) if key in dict_ and dict_[key] == value)
+    return list((dict_ for index, dict_ in enumerate(lst) if key in dict_ and dict_[key] == value))
 
 def choosing_note():
     print('Выберите параметр для поиска записи:\n'
@@ -34,6 +32,10 @@ def choosing_note():
     with open('To-Do_List.json', 'r', encoding='utf-8') as tdlst:
         lst = json.load(tdlst)
 
-    find_by_key(lst, key, value)
+    choose_from_several(find_by_key(lst, key, value))
+
+def choose_from_several(lst: list):
+    if len(lst) > 1:
+        pass
 
 

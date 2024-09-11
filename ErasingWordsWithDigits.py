@@ -21,10 +21,10 @@ text = 'Мама сшила м0не штаны и7з бере9зовой кор4
 #         'Ну что нам 7/17 и даже если 100!'
 
 def erasing_words_with_digits(text):
-    with open('file for Hw004-04.txt', 'w', encoding='utf-8') as data:
+    with open('text_with_digits.txt', 'w', encoding='utf-8') as data:
         data.write(text)
 
-    path = 'file for Hw004-04.txt'
+    path = 'text_with_digits.txt'
     data = open(path, 'r', encoding='utf-8')
     text = data.read()
     list_of_words = text.split()
